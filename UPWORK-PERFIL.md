@@ -77,7 +77,7 @@ Built to survive real-world mess: malformed emails, repeated submissions and an 
 Stack: Node.js, HTTP, atomic JSON persistence, retry with backoff.
 ```
 
-**Link:** URL do Render (ou o repositório no GitHub)
+**Link:** https://automation-pipeline-2013.onrender.com
 
 ### Item 2 — título
 ```
@@ -93,6 +93,8 @@ Most "landing page" projects only look good. This one actually captures leads sa
 
 Stack: Node.js, vanilla HTML/CSS/JS, JSON + CSV persistence.
 ```
+
+**Link:** https://landing-form-9ebp.onrender.com
 
 ---
 

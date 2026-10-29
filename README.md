@@ -8,13 +8,20 @@ Ambos rodam com **Node.js puro, zero dependências** — nada de `npm install`, 
 | [`automation-pipeline/`](./automation-pipeline) | Webhook, validação, deduplicação, retry com backoff, persistência atômica, dashboard | 4310 |
 | [`landing-form/`](./landing-form) | Landing page responsiva, formulário validado no servidor, anti-spam, rate limit, export CSV | 4320 |
 
-## Preview
+## Demos ao vivo
 
-**Dashboard do pipeline** (dados de exemplo já carregados)
-![Dashboard do pipeline](./docs/dashboard.png)
+| Projeto | URL |
+|---|---|
+| Automation Pipeline (dashboard) | <https://automation-pipeline-2013.onrender.com> |
+| Landing Page (formulário) | <https://landing-form-9ebp.onrender.com> |
+
+> Plano free do Render: o serviço dorme após 15 min de inatividade — a primeira visita pode levar ~30 s.
+
+**Dashboard do pipeline**
+![Dashboard do pipeline](./docs/dashboard-live.png)
 
 **Landing page com formulário**
-![Landing page](./docs/landing.png)
+![Landing page](./docs/landing-live.png)
 
 ## Rodar
 
