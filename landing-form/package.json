@@ -1,0 +1,13 @@
+{
+  "name": "landing-form",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Conversion-focused landing page with a waitlist form: client + server validation, anti-spam, rate limiting and CSV export. Zero dependencies.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

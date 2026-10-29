@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lead Pipeline — Live Dashboard</title>
+    <meta name="description" content="Live dashboard for a webhook lead ingestion pipeline with deduplication and retrying CRM sync." />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        Lead Pipeline
+      </div>
+      <div class="flow" aria-label="Pipeline stages">
+        <span>webhook</span><span class="arrow">→</span>
+        <span>normalize</span><span class="arrow">→</span>
+        <span>dedupe</span><span class="arrow">→</span>
+        <span>CRM</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="stats" id="stats" aria-live="polite">
+        <div class="card skeleton"></div>
+        <div class="card skeleton"></div>
+        <div class="card skeleton"></div>
+        <div class="card skeleton"></div>
+        <div class="card skeleton"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Recent leads</h2>
+          <span class="hint"><span class="live"></span> auto-refresh 3s</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Source</th>
+                <th>Status</th>
+                <th>Received</th>
+              </tr>
+            </thead>
+            <tbody id="rows">
+              <tr><td colspan="5" class="empty">Loading…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <code>POST /webhook/lead</code> · <code>GET /api/leads</code> · <code>GET /api/stats</code>
+        <span class="sep">·</span>
+        <a href="/health">health</a>
+      </footer>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

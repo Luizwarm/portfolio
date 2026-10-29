@@ -1,0 +1,26 @@
+# Render Blueprint — publica os dois projetos como Web Services gratuitos.
+# Dashboard: New + → Blueprint → conecte este repositório → Apply.
+services:
+  - type: web
+    name: automation-pipeline
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: echo "no dependencies"
+    startCommand: node automation-pipeline/src/server.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22.11.0"
+
+  - type: web
+    name: landing-form
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: echo "no dependencies"
+    startCommand: node landing-form/server.js
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "22.11.0"

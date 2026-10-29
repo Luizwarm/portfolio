@@ -1,0 +1,14 @@
+{
+  "name": "automation-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Webhook lead pipeline: validation, normalization, deduplication, audit log and retrying outbound CRM sync. Zero dependencies.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js"
+  }
+}
