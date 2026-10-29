@@ -36,7 +36,7 @@ Depois me avise — eu faço o resto:
    git config user.name "Seu Nome"
    git config user.email "seu@email.com"
    git commit -m "feat: automation pipeline and landing form"
-   git remote add origin https://github.com/SEU_USUARIO/portfolio.git
+   git remote add origin https://github.com/Luizwarm/portfolio.git
    git push -u origin main
    ```
 

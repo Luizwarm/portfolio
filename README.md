@@ -54,7 +54,7 @@ O Git não está instalado nesta máquina. Duas opções:
    git add .
    git commit -m "feat: automation pipeline and landing form"
    git branch -M main
-   git remote add origin https://github.com/SEU_USUARIO/portfolio.git
+   git remote add origin https://github.com/Luizwarm/portfolio.git
    git push -u origin main
    ```
 
