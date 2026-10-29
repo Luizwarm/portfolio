@@ -48,29 +48,16 @@ Eles cobrem as duas dores que mais aparecem em anúncios de freelance:
 
 Nenhum é um clone de tutorial: ambos têm tratamento de erro, validação e documentação em inglês — que é o que separa portfólio de "projeto de curso".
 
-## Publicar (próximos passos)
+## Deploy
 
-O Git não está instalado nesta máquina. Duas opções:
+Publicado no **Render** com o [`render.yaml`](./render.yaml): dois Web Services gratuitos que leem `PORT` do ambiente.
 
-**A) Instalar Git e subir para o GitHub**
-1. Instale o [Git para Windows](https://git-scm.com/download/win)
-2. Crie um repositório no GitHub chamado `portfolio`
-3. Na pasta `C:\dev\portfolio`:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: automation pipeline and landing form"
-   git branch -M main
-   git remote add origin https://github.com/Luizwarm/portfolio.git
-   git push -u origin main
-   ```
+Para publicar uma cópia sua:
+1. Faça um fork do repositório
+2. Crie uma conta em [render.com](https://render.com) e conecte o GitHub
+3. **New + → Blueprint** → selecione o repositório → **Apply**
 
-**B) Sem Git** — use "Add file → Upload files" no GitHub, arrastando as pastas.
-
-**Demo ao vivo (grande diferencial):** publique qualquer um dos dois no [Render](https://render.com) ou [Railway](https://railway.app) como *Web Service*:
-- Build command: *(vazio)*
-- Start command: `node automation-pipeline/src/server.js` (ou `node landing-form/server.js`)
-- O `PORT` já é lido de `process.env.PORT`.
+> No plano free o serviço dorme após 15 min de inatividade (primeira visita ~30 s) e o disco é efêmero — os dados de `data/` resetam a cada deploy.
 
 Coloque o link no topo do perfil do Upwork. Cliente que vê funcionando contrata muito mais rápido.
 
